@@ -6,8 +6,8 @@ function Video() {
   let {roomId}=useParams() 
   const meeting = useCallback(async (element) => {
     if (!element) return;
-    const appID = 1537453518;
-    const serverSecret = "8988f3a7d429e79a98c95806a13bcc2d";
+    const appID = 768568528;
+    const serverSecret = "52cbd976671510543186b64c63903f8b";
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomId, Date.now().toString(), "Mohd Faiz");
     const zp = ZegoUIKitPrebuilt.create(kitToken);
     zp.joinRoom({
